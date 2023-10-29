@@ -1,3 +1,4 @@
+//Task 2; Triangles
 import java.util.Scanner;
 public class Obsolete {
     public static void main(String[] args) {

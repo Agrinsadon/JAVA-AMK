@@ -1,5 +1,5 @@
+//Task 3: Obsolete measures
 import java.util.Scanner;
-
 public class Triangles {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

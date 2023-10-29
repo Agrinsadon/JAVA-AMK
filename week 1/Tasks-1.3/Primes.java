@@ -1,3 +1,4 @@
+//Task 3: Prime number generator
 import java.util.Scanner;
 public class Primes {
     public static void main(String[] args) {

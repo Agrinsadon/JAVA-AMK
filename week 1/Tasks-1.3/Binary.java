@@ -1,3 +1,4 @@
+//Task 2: Binary values
 import java.util.Scanner;
 public class Binary {
     public static void main(String[] args) {

@@ -1,3 +1,4 @@
+//Task 4: Multiplication table exam
 import java.util.Random;
 import java.util.Scanner;
 public class Multiplication {
