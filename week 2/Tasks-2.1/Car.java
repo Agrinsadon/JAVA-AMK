@@ -37,14 +37,12 @@ public class Car {
             checkSpeedReachedTarget();
         }
     }
-
     public void decelerate(double deceleration) {
         if (cruiseControlOn) {
             currentSpeed = Math.max(0.0, currentSpeed - deceleration);
             checkSpeedReachedTarget();
         }
     }
-
     private void checkSpeedReachedTarget() {
         if (currentSpeed == targetSpeed) {
             System.out.println("Congratulations! You have reached the target speed.");

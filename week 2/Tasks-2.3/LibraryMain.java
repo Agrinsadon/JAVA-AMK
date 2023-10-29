@@ -49,7 +49,6 @@ class Book {
         return "Title: " + title + ", Author: " + author + ", Year: " + publicationYear + ", Rating: " + rating;
     }
 }
-
 class Library {
     private ArrayList<Book> books = new ArrayList<>();
     private ArrayList<User> users = new ArrayList<>();

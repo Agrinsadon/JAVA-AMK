@@ -9,6 +9,7 @@ public class CarMaker {
         this.tankCapacity = tankCapacity;
         this.topSpeed = topSpeed;
     }
+
     @Override
     public String toString() {
         return "Car [Year= " + year + ", Mileage= " + mileage + " mpg, Tank Capacity= " + tankCapacity + " gallons, Top Speed= " + topSpeed + " km/h]";

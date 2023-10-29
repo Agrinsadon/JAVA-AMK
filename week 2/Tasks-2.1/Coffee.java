@@ -9,12 +9,10 @@ public class Coffee {
         coffeeAmount = 10;
     }
 
-    // Turn the coffee maker on
     public void turnOn() {
         powerOn = true;
     }
 
-    // Turn the coffee maker off
     public void turnOff() {
         powerOn = false;
     }
@@ -35,12 +33,10 @@ public class Coffee {
         }
     }
 
-    // Get the current coffee type
     public String getCoffeeType() {
         return coffeeType;
     }
 
-    // Get the current coffee amount
     public int getCoffeeAmount() {
         return coffeeAmount;
     }

@@ -1,7 +1,5 @@
 // ALL DONE EXCEPT TASK 5 ( SHOPPING LIST )
-
 import java.util.*;
-
 public class GroceryList {
     private Map<String, List<String>> categorizedGroceryList = new HashMap<>();
     private Map<String, Double> itemCosts = new HashMap<>();
