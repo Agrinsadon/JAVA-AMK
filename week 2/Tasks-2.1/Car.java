@@ -52,17 +52,16 @@ public class Car {
         }
     }
     public static void main(String[] args) {
-        Car car = new Car(120.0); // Maximum speed of 120 mph
-
-        car.setTargetSpeed(70.0);
+        Car car = new Car(120.0);
+        car.setTargetSpeed(110.0);
         if (car.turnOnCruiseControl()) {
             System.out.println("Cruise control is on.\nTarget Speed: " + car.targetSpeed + " mph");
         } else {
             System.out.println("Cruise control could not be turned on.");
         }
 
-        car.accelerate(60.0);
-        car.decelerate(10.0);
+        car.accelerate(110.0);
+        car.decelerate(0.0);
 
         System.out.println("Current speed: " + car.getCurrentSpeed());
 
