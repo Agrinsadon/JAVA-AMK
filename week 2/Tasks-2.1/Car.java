@@ -1,71 +1,40 @@
-// Cruise control
 public class Car {
-    private double topSpeed;
-    private boolean cruiseControlOn;
-    private double targetSpeed;
-    private double currentSpeed;
+    private String logo;
+    private String model;
+    private int year;
+    private double gasolineTankCapacity;
+    private int topSpeed;
 
-    public Car(double topSpeed) {
+    public Car(String logo, String model, int year, double gasolineTankCapacity, int topSpeed) {
+        this.logo = logo;
+        this.model = model;
+        this.year = year;
+        this.gasolineTankCapacity = gasolineTankCapacity;
         this.topSpeed = topSpeed;
     }
-
-    public void setTargetSpeed(double targetSpeed) {
-        if (!cruiseControlOn) {
-            this.targetSpeed = Math.max(0.0, Math.min(topSpeed, targetSpeed));
-        }
+    public String getLogo() {
+        return logo;
+    }
+    public String getModel() {
+        return model;
+    }
+    public int getYear() {
+        return year;
+    }
+    public double getGasolineTankCapacity() {
+        return gasolineTankCapacity;
+    }
+    public int getTopSpeed() {
+        return topSpeed;
     }
 
-    public boolean turnOnCruiseControl() {
-        if (!cruiseControlOn && targetSpeed > 0) {
-            cruiseControlOn = true;
-            return true;
-        }
-        return false;
-    }
-
-    public void turnOffCruiseControl() {
-        cruiseControlOn = false;
-    }
-
-    public double getCurrentSpeed() {
-        return currentSpeed;
-    }
-
-    public void accelerate(double acceleration) {
-        if (cruiseControlOn) {
-            currentSpeed = Math.min(topSpeed, currentSpeed + acceleration);
-            checkSpeedReachedTarget();
-        }
-    }
-    public void decelerate(double deceleration) {
-        if (cruiseControlOn) {
-            currentSpeed = Math.max(0.0, currentSpeed - deceleration);
-            checkSpeedReachedTarget();
-        }
-    }
-    private void checkSpeedReachedTarget() {
-        if (currentSpeed == targetSpeed) {
-            System.out.println("Congratulations! You have reached the target speed.");
-        } else if (currentSpeed < targetSpeed) {
-            System.out.println("Target speed not reached. Cruise control turned off.");
-            turnOffCruiseControl();
-        }
-    }
     public static void main(String[] args) {
-        Car car = new Car(120.0);
-        car.setTargetSpeed(110.0);
-        if (car.turnOnCruiseControl()) {
-            System.out.println("Cruise control is on.\nTarget Speed: " + car.targetSpeed + " mph");
-        } else {
-            System.out.println("Cruise control could not be turned on.");
-        }
+        Car myCar = new Car("Ferrari", "Spider", 2022, 100.0, 120);
 
-        car.accelerate(110.0);
-        car.decelerate(0.0);
-
-        System.out.println("Current speed: " + car.getCurrentSpeed());
-
-        car.turnOffCruiseControl();
-        System.out.println("Cruise control is off.");
+        System.out.println("Car Logo: " + myCar.getLogo());
+        System.out.println("Car Model: " + myCar.getModel());
+        System.out.println("Car Year: " + myCar.getYear());
+        System.out.println("Gasoline Tank Capacity: " + myCar.getGasolineTankCapacity() + " gallons");
+        System.out.println("Top Speed: " + myCar.getTopSpeed() + " mph");
     }
 }
