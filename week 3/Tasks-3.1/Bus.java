@@ -1,3 +1,4 @@
+// TASK 2
 public class Bus extends Car {
     private int numberOfPassengers;
 
