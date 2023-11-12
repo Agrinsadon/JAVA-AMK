@@ -1,7 +1,7 @@
 public class SportsCar extends Car {
-    private double acceleration; // Better acceleration
-    private double deceleration; // Better deceleration
-    private double gasolineConsumption; // Higher gasoline consumption
+    private double acceleration;
+    private double deceleration;
+    private double gasolineConsumption;
 
     public SportsCar(String logo, String model, int year, double gasolineTankCapacity, int topSpeed,
                      double acceleration, double deceleration, double gasolineConsumption) {
