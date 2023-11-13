@@ -23,7 +23,7 @@ public class Bus extends Car {
             numberOfPassengers -= passengers;
             System.out.println(passengers + " passengers exited the bus.");
         } else {
-            System.out.println("Invalid number of passengers to exit.");
+            System.out.println("There is no passengers for them to exit.");
         }
     }
 
