@@ -13,7 +13,7 @@ interface ElectricVehicle {
 abstract class AbstractVehicle implements Vehicle, ElectricVehicle {
     protected String type;
     protected String fuel;
-    protected double fuelEfficiency; // New instance variable
+    protected double fuelEfficiency;
 
     public AbstractVehicle(String type, String fuel, double fuelEfficiency) {
         this.type = type;
