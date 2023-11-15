@@ -16,8 +16,6 @@ public class LibraryMember {
         this.reservedBooks = new ArrayList<>();
     }
 
-    // Getters and setters
-
     public String getName() {
         return name;
     }
@@ -42,8 +40,6 @@ public class LibraryMember {
         return reservedBooks;
     }
 
-    // Methods for borrowing and returning books
-
     public void borrowBook(Book book) {
         borrowedBooks.add(book);
     }
@@ -51,8 +47,6 @@ public class LibraryMember {
     public void returnBook(Book book) {
         borrowedBooks.remove(book);
     }
-
-    // Methods for handling reserved books
 
     public void addReservedBook(Book book) {
         reservedBooks.add(book);

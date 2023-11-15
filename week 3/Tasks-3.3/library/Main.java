@@ -19,23 +19,29 @@ public class Main {
         library.addMember(member1);
         library.addMember(member2);
 
-        // Perform borrowing and returning operations
+        System.out.println(" ");
+
         library.borrowBook(member1, book1);
         library.returnBook(member1, book1);
+
+        System.out.println(" ");
 
         library.borrowBook(member2, book2);
         library.returnBook(member2, book2);
 
-        // Demonstrate book reservation
+        System.out.println(" ");
+
         library.reserveBook(member1, book2);
         library.reserveBook(member2, book1);
-        library.reserveBook(member1, book2);  // Already reserved
+        library.reserveBook(member1, book2);
 
-        // Demonstrate reservation cancellation
+        System.out.println(" ");
+
         library.cancelReservation(member1, book2);
-        library.cancelReservation(member1, book1);  // Not reserved by member1
+        library.cancelReservation(member1, book1);
 
-        // Display reserved books for members
+        System.out.println(" ");
+
         library.displayReservedBooks(member1);
         library.displayReservedBooks(member2);
 
