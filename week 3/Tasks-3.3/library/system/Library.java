@@ -15,7 +15,6 @@ public class Library {
         this.members = new ArrayList<>();
     }
 
-    // Methods to add book and member
     public void addBook(Book book) {
         books.add(book);
     }
@@ -24,7 +23,6 @@ public class Library {
         members.add(member);
     }
 
-    // Method to borrow a book
     public void borrowBook(LibraryMember member, Book book) {
         if (books.contains(book)) {
             member.borrowBook(book);
@@ -35,7 +33,6 @@ public class Library {
         }
     }
 
-    // Method to return a book
     public void returnBook(LibraryMember member, Book book) {
         if (member.getBorrowedBooks().contains(book)) {
             member.returnBook(book);
@@ -46,7 +43,6 @@ public class Library {
         }
     }
 
-    // New methods for book reservations
     public void reserveBook(LibraryMember member, Book book) {
         if (!book.isReserved()) {
             book.setReserved(true);

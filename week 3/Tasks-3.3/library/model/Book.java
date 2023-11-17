@@ -45,6 +45,6 @@ public class Book {
     }
     @Override
     public String toString() {
-        return "Title = " + title + ", Author = " + author + ", Isbn = " + isbn + ", reserved = " + reserved;
+        return "Title = " + getTitle() + ", Author = " + getAuthor() + ", Isbn = " + getIsbn() + ", reserved = " + isReserved()+ "\n";
     }
 }

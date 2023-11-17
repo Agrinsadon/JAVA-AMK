@@ -61,6 +61,6 @@ public class LibraryMember {
     }
     @Override
     public String toString() {
-        return "LibraryMember: " + "Name = " + name + ", Member Id = " + memberId + ", Borrowed Books = " + borrowedBooks + ", Reserved Books = " + reservedBooks + "\n";
+        return "LibraryMember: " + "Name = " + getName() + ", Member Id = " + getMemberId() + ", Borrowed Books = " + getBorrowedBooks() + ", Reserved Books = " + getReservedBooks() + "\n";
     }
 }
